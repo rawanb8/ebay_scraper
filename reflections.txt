@@ -1,0 +1,18 @@
+1. yes it can. we used logistic regression and decision tree to do so
+the machine coukd calculate the relationship between price and discount and original price
+we gave the model "extended features" and the score went up meanining it was learning the logic
+
+2. the discount ratio and the original price:
+when we calculate the ratio using the original price -> high ratio means its a hot deal most of the time
+the keywords werent helpful as much as discount ratio i figureed they arent as accurate
+but perhaps if we inclided a larger set of keywords it would be better (refurbished/as good as new/ new/ used/ ... )
+
+3. decision tree:
+regression kinda takes everything into consiferation but decision tree can handle if/els cases:
+example:  if it is iphone *and* price < 300 for example, *then* its a hot deal.
+this is more logical and understandable adn relatable to humans rather than doing a math equation
++ ebay data has lots of info that can make sense and be used in decision tree
+
+4. recall goes up but precision dropped
+precision is accuracy, if accuracy was affected some "normal" deals will get categorized as "hot deals" which is actually not the case
+so when a useer for example clicks on a "hot deal" item and realizes its not they would lose trust with the platform
